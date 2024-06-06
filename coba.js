@@ -86,3 +86,4 @@ console.log(
   "Maximum Obtainable Value with Dynamic Programming is " + result2.maxValue
 );
 console.log("Cuts: " + result2.cuts);
+console.log("hello");

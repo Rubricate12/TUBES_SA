@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(hdrod.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#second-page {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: solid;
+  opacity: 0.7;
+}
+
+.logo_container {
+  height: 50%;
+  margin-left: 100px;
+}
+
+.logo_container h1 {
+  color: black;
+  height: 100%;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.kelompok {
+  height: 50%;
+  margin-left: 100px;
+}
+
+.kelompok h2 {
+  color: black;
+  height: 100%;
+  vertical-align: top;
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.inner-section {
+  background-color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  height: 450px;
+}
+
+input {
+  font-size: 18px;
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.content1 {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 100px;
+}
+
+.content2 {
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-right: 100px;
+}
+
+.content3 {
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-right: 100px;
+}
+
+.content4 {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 100px;
+}
+
+.content1 p {
+  font-size: 28px;
+  font-weight: 1000;
+}
+
+.content2 p {
+  font-size: 28px;
+  font-weight: 1000;
+}
+
+button {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  background: rgb(0, 5, 105);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#submit {
+  text-decoration: none;
+  color: white;
+}
+
+.option1 {
+  display: inline-block;
+  margin-right: 30px;
+  transition: 0.15s;
+}
+
+.option2 {
+  display: inline-block;
+}
+
+#typeID {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+}
+#pop-up-menu {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#menu {
+  background: #ffffff;
+  border-radius: 12px;
+  height: fit-content;
+  width: fit-content;
+  padding: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#menu input {
+  display: block;
+}
+#button-container {
+  float: right;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+}
+#close {
+  margin-right: 8px;
+  background: red;
+}

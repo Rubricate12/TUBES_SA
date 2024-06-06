@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUBES SA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="first-page">
+      <div class="header">
+        <div class="logo_container">
+          <h1>TUBES SA - Cutting Rod Problem</h1>
+        </div>
+        <div class="kelompok">
+          <h2>Grup 01-02</h2>
+        </div>
+      </div>
+      <div class="section">
+        <div class="inner-section">
+          <div class="content1">
+            <p>Length of rod</p>
+            <br />
+            <input type="text" placeholder="Enter rod length" id="lengthRod" />
+          </div>
+          <div class="content2">
+            <p>Price per size</p>
+            <br />
+            <button id="pop-up-button" onclick="openPopUp()">Add</button>
+          </div>
+          <div class="content3">
+            <div class="option1">
+              <input type="radio" id="bruteforce" name="method" />
+              <p id="typeID">Bruteforce</p>
+            </div>
+            <div class="option2">
+              <input type="radio" id="dp" name="method" />
+              <p id="typeID">Dynamic Programming</p>
+            </div>
+          </div>
+          <div class="content4">
+            <button class="btn" id="submit" onclick="submit()">Submit</button>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id="second-page">
+      <div class="header">
+        <div class="logo_container">
+          <h1>TUBES SA - Cutting Rod Problem</h1>
+        </div>
+        <div class="kelompok">
+          <h2>Grup 01-02</h2>
+        </div>
+      </div>
+      <div class="section">
+        <div class="inner-section">
+          <div class="content1">
+            <p>Maximum profit is <span id="profit">{{value}}</span></p>
+          </div>
+          <div class="content1">
+            <p>With piece <span id="piece">{{value}}</span></p>
+          </div>
+          <div class="content1">
+            <p>Execution time is <span id="time">{{time}}</span> ms</p>
+          </div>
+          <div class="content4">
+            <button class="btn" id="submit" onclick="back()">Back</button>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id="pop-up-menu">
+      <div id="menu">
+        <p>Price for every size = <span id="size_rod"></span></p>
+        <p>Count =<span id="count"></span></p>
+        <p style="margin-top: 8px">Profit</p>
+        <input type="text" id="price" />
+        <div id="button-container">
+          <button id="close" onclick="closePopUp()">Close</button>
+          <button id="save" onclick="saveData()">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/template" data-template-name="myTemplate">
+      <p>Maximum Profit is {{value}}</p>
+    </script>
+  </body>
+</html>

@@ -76,7 +76,7 @@ function bruteforce2(price, size) {
     let newValue = price[i] + result.maxValue;
     //membandingkan newValue dengan var global yaitu max
     //contoh jika pada loop pertama lebih besar maka newValue akan menjadi max baru
-    //dan array cut akan concat dengan result pada max, contoh 1 diconcat menuju cuts yg berisi array [1,1,6] dari max rekursif
+    //dan array cut akan concat dengan result pada max, contoh 1 diconcat menuju cuts yg berisi array [1,1,6] dari max recursive
     if (newValue > max.maxValue) {
       max = { maxValue: newValue, cuts: [i + 1].concat(result.cuts) };
     }
